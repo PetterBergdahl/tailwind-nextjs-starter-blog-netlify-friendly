@@ -3,11 +3,13 @@ name: Petter Bergdahl
 avatar: /static/images/avatar.png
 occupation: SharePoint & Microsoft 365 Specialist
 company: Exobe
-email: petter.bergdahl@exobe.com
+email: petter.bergdahl@gmail.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
 github: https://github.com
 ---
+
+![petter](/static/images/avatar.png)
 
 Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
 
