@@ -9,4 +9,40 @@ layout: PostSimple
 
 ## Overview
 
-Test
+Migrating content between tenants in SharePoint can often be a big hassle, and require expensive tools in the process. 
+What if you just want to copy content from a specific site, such as pages, documents and other assets. For this, we can use PnP Powershell. 
+
+PnP Powershell is very powerful and can be used to do a multitude of tasks. But for this blog post, lets focus on the simple objective of copying content.
+If you want to move the content from tenant A to B, you can do this directly in Powershell, but the client wanted to extract the content to their local storage for a later migration.
+
+Here's the script in its entirety:
+
+```jsx
+#Parameters
+$SourceSiteURL = "https://<tenant>.sharepoint.com/sites/<site>"
+ 
+#Connect to the Source Site
+Connect-PnPOnline -Url $SourceSiteURL -Interactive
+ 
+#Export all pages from the source
+$TempFile = [System.IO.Path]::GetTempFileName()
+ 
+Get-PnPSiteTemplate -Out C:\<path>\template.xml -Handlers PageContents -IncludeAllClientSidePages -Force -PersistBrandingFiles
+```
+
+
+
+And in the same way, heres the script to upload the extracted content to another site or tenant:
+
+#Parameters
+$DestinationSiteURL = "https://<tenant>.sharepoint.com/sites/<site>"
+ 
+#Connect to the Source Site
+Connect-PnPOnline -Url $DestinationSiteURL -Interactive
+ 
+Invoke-PnPSiteTemplate -Path C:\Scripts\template.xml
+
+The same principle can be applied for copying termgroups, navigation, permission groups etc. Read more about it in the link below:
+
+https://pnp.github.io/powershell/cmdlets/Get-PnPSiteTemplate.html
+
