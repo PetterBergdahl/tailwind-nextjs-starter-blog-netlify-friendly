@@ -28,3 +28,15 @@ $TempFile = [System.IO.Path]::GetTempFileName()
 Get-PnPSiteTemplate -Out C:\<path>\template.xml -Handlers PageContents -IncludeAllClientSidePages -Force -PersistBrandingFiles
 ```
 
+And in the same way, heres the script to upload the content to another site or tenant:
+
+```jsx
+$DestinationSiteURL = "https://<tenant>.sharepoint.com/sites/<site>"
+
+Connect-PnPOnline -Url $DestinationSiteURL -Interactive
+ 
+Invoke-PnPSiteTemplate -Path C:\Scripts\template.xml
+```
+The same principle can be applied for copying termgroups, navigation, permission groups etc. Read more about it in the link below:
+
+https://pnp.github.io/powershell/cmdlets/Get-PnPSiteTemplate.html
