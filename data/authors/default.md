@@ -11,8 +11,6 @@ github: https://github.com
 
 ![petter](/static/images/avatar.png)
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Petter is a senior consultant out of Gothenburg, Sweden. He has over 16 years of industry experience, with the last 10 years being focused on SharePoint.  
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+He is currently working at Exobe, where he will continue to focus on his experience in SharePoint, along with doing deep dives into Microsoft Viva, Microsoft Syntex and everything in between. 
