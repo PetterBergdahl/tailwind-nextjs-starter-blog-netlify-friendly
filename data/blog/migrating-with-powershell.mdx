@@ -17,19 +17,6 @@ If you want to move the content from tenant A to B, you can do this directly in 
 
 Here's the script in its entirety:
 
-```jsx
-#Parameters
-$SourceSiteURL = "https://<tenant>.sharepoint.com/sites/<site>"
- 
-#Connect to the Source Site
-Connect-PnPOnline -Url $SourceSiteURL -Interactive
- 
-#Export all pages from the source
-$TempFile = [System.IO.Path]::GetTempFileName()
- 
-Get-PnPSiteTemplate -Out C:\<path>\template.xml -Handlers PageContents -IncludeAllClientSidePages -Force -PersistBrandingFiles
-```
-
 
 
 And in the same way, heres the script to upload the extracted content to another site or tenant:
