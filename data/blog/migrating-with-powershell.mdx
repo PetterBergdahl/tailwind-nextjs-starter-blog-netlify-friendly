@@ -16,3 +16,15 @@ PnP Powershell is very powerful and can be used to do a multitude of tasks. But 
 If you want to move the content from tenant A to B, you can do this directly in Powershell, but the client wanted to extract the content to their local storage for a later migration.
 
 Here's the script in its entirety:
+
+
+```jsx
+$SourceSiteURL = "https://<tenant>.sharepoint.com/sites/<site>"
+
+Connect-PnPOnline -Url $SourceSiteURL -Interactive
+ 
+$TempFile = [System.IO.Path]::GetTempFileName()
+ 
+Get-PnPSiteTemplate -Out C:\<path>\template.xml -Handlers PageContents -IncludeAllClientSidePages -Force -PersistBrandingFiles
+```
+
