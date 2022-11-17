@@ -25,7 +25,7 @@ Connect-PnPOnline -Url $SourceSiteURL -Interactive
  
 $TempFile = [System.IO.Path]::GetTempFileName()
  
-Get-PnPSiteTemplate -Out C:\<path>\template.xml -Handlers PageContents -IncludeAllClientSidePages -Force -PersistBrandingFiles
+Get-PnPSiteTemplate -Out C:\<folder>\template.xml -Handlers PageContents -IncludeAllClientSidePages -Force -PersistBrandingFiles
 ```
 
 And in the same way, heres the script to upload the content to another site or tenant:
@@ -35,7 +35,7 @@ $DestinationSiteURL = "https://<tenant>.sharepoint.com/sites/<site>"
 
 Connect-PnPOnline -Url $DestinationSiteURL -Interactive
  
-Invoke-PnPSiteTemplate -Path C:\Scripts\template.xml
+Invoke-PnPSiteTemplate -Path C:\<folder>\template.xml
 ```
 
 The cmdlets we are using in these examples are Get-PnPSiteTemplate/Invoke-PnPSiteTemplate.
