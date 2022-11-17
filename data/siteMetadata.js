@@ -2,14 +2,14 @@ const siteMetadata = {
   title: 'Viva Collaboration!',
   author: 'Petter Bergdahl',
   headerTitle: 'Viva Collaboration!',
-  description: 'A blog regarding my trials and tribulations around SharePoint, Microsoft Viva and everything else',
+  description: 'A blog covering my trials and tribulations around SharePoint, Microsoft 365, Microsoft Viva and everything in between',
   language: 'en-us',
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
+  email: 'petter.bergdahl@gmail.com',
   github: 'https://github.com',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
@@ -55,7 +55,7 @@ const siteMetadata = {
       label: '', // label (optional): Comment 💬
       // theme example: github-light, github-dark, preferred-color-scheme
       // github-dark-orange, icy-dark, dark-blue, photon-dark, boxy-light
-      theme: '',
+      theme: 'boxy-light',
       // theme when dark mode
       darkTheme: '',
     },
